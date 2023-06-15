@@ -36,5 +36,66 @@ const player = {
 
 console.log(player);
 console.log(player.name);
-console.log(player["name"]);
-player.lastName="potato";
+console.log(player["name"]); 
+player.lastName="potato"; 
+
+function sayHello(nameOfPerson, age) {
+    console.log("Hello my name is " + nameOfPerson +" and I'm " + age);
+}
+
+sayHello("taehun", 24);
+
+function plus(firstNumber, secondNumber){
+    console.log(firstNumber + secondNumber);
+}
+
+function divide(a,b){
+    console.log(a/b);
+}
+
+plus(8, 60);
+divide(98, 20);
+
+const player1 = {
+    name:"taehun",
+    sayHello:function(OtherPersonsName) {
+        console.log("hello! "+ OtherPersonsName + " nice to meet you");
+    },
+};
+
+console.log(player1.name);
+player1.sayHello("Lee");
+
+const calculator = {
+    add:function(a,b){
+        return a+b;
+    },
+    minus:function(a,b){
+        return a-b;
+    },
+    times:function(a,b){
+        return a*b;
+    },
+    divide:function(a,b){
+        return a/b;
+    },
+    powerof:function(a,b){
+        return a**b;
+    },
+};
+
+const plusResult = calculator.add(4,2);
+const minusResult = calculator.minus(plusResult,2);
+const timesResult = calculator.times(4,minusResult);
+const divideResult = calculator.divide(timesResult,plusResult);
+const powerofResult = calculator.powerof(divideResult,minusResult);
+
+
+
+const age = 99;
+function calculateKrAge(ageOfForeigner){
+    return ageOfForeigner + 2;
+}
+
+const KrAge = calculateKrAge(age);
+console.log(KrAge);
