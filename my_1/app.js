@@ -99,3 +99,19 @@ function calculateKrAge(ageOfForeigner){
 
 const KrAge = calculateKrAge(age);
 console.log(KrAge);
+
+const myAge = parseInt(prompt("How old are you?"));
+
+if(isNaN(myAge) || age < 0){
+    console.log("Please write a real positive number");
+} else  if(myAge < 18){
+    console.log("You are too young");
+} else if(myAge>=18 && myAge<=50){
+    console.log("You can drink")
+} else if (myAge >50 && myAge<=80){
+    console.log("You should exercise")
+} else if (myAge === 100) {
+    console.log("wow! you are wise");
+} else if (myAge>80){
+    console.log("You can do whatever you want");
+} 
