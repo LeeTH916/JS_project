@@ -16,3 +16,23 @@ const _title = document.querySelector(".hello h1");  // 해당 클래스의 h1�
 // const _title = document.querySelector("#hello h1");  // 해당 id의 h1의 첫번째 elment만 가져옴 -> document.getElementById("hello") 와 같음
 console.log(_title);
 _title.innerText="Hello";
+
+
+function handleTitleClick(){
+    console.log("title was clicked!");
+    _title.style.color="blue";
+}
+
+function handleMouseEnter(){
+    console.log("mouse is here!");
+    _title.innerText="Mouse is here!";
+}
+
+function handleMouseLeave(){
+    _title.innerText="Mouse is gone!";
+}
+_title.addEventListener("click",handleTitleClick);
+_title.addEventListener("mouseenter",handleMouseEnter);
+_title.addEventListener("mouseleave",handleMouseLeave);
+
+
