@@ -1,3 +1,5 @@
+// 화면 사이즈 변화에 따라 배경색 바꾸기
+
 function handleEventWindowResize(){
     if(window.outerWidth<700){
         body.classList.add("one");
