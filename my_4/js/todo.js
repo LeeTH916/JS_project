@@ -53,4 +53,4 @@ if(savedToDos){
     //parseToDos.forEach((item) => paintToDo(item)); // arrow function
     parseToDos.forEach(paintToDo);
 }
-// dddddd
+// ddddddsss
